@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier Code Generator</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <h1>Supplier Code Generator</h1>
+    <form method="POST">
+        <label for="supplier_name">Supplier Name:</label>
+        <input type="text" id="supplier_name" name="supplier_name" required>
+        <button type="submit">Generate Code</button>
+    </form>
+    {% if code %}
+        <p>Generated Code: <strong>{{ code }}</strong></p>
+    {% endif %}
+</body>
+</html>
